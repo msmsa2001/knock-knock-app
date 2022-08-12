@@ -2,7 +2,7 @@ from database import Base
 from sqlalchemy import VARCHAR, String,Boolean,Integer,Column
 
 class SignUp(Base):
-    __tablename__='items'
+    __tablename__='users'
     id=Column(Integer,primary_key=True, autoincrement=True)
     name=Column(String(50),nullable=False)
     email=Column(String(30),nullable=False,unique=True)
